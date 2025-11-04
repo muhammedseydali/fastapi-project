@@ -1,0 +1,83 @@
+# === Python ===
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pkl
+*.db
+*.sqlite3
+*.log
+
+# Byte-compiled / optimized / DLL files
+*.pyc
+*.pyo
+*.pyd
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# === Virtual Environments ===
+venv/
+env/
+ENV/
+.venv/
+.virtualenv/
+pip-wheel-metadata/
+site/
+
+# === FastAPI / Uvicorn specific ===
+*.pid
+*.sock
+*.db
+*.sqlite3
+
+# === Environment variables ===
+.env
+.env.*
+*.env
+
+# === Editor / IDE ===
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# === Build / Distribution ===
+build/
+dist/
+develop-eggs/
+.eggs/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# === Docker ===
+Dockerfile
+docker-compose.yml
+*.dockerignore
+.docker/
+.dockerignore
+docker-compose.override.yml
+
+# === Jupyter Notebooks ===
+.ipynb_checkpoints
+
+# === OS Files ===
+.DS_Store
+Thumbs.db
+
+# === Misc ===
+*.bak
+*.tmp
