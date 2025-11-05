@@ -4,7 +4,6 @@ from sqlmodel import SQLModel
 from src.config import Config
 
 
-# ✅ Create the async engine
 engine = create_async_engine(
     Config.DATABASE_URL,
     echo=True,
@@ -12,14 +11,12 @@ engine = create_async_engine(
 )
 
 
-# ✅ Initialize database (run at startup)
 async def init_db():
-    from src.books.models import Book  # Import models before creating tables
+    from src.books.models import Book 
     async with engine.begin() as conn:
         await conn.run_sync(SQLModel.metadata.create_all)
 
 
-# ✅ Dependency for FastAPI
 async def get_session() -> AsyncSession:
     async_session = sessionmaker(
         bind=engine,
